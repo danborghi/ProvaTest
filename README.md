@@ -16,3 +16,16 @@ O Selenium oferece bibliotecas específicas para Python que facilitam o controle
 Node.js
 
 Na plataforma Node.js, utiliza-se a biblioteca selenium-webdriver, uma implementação oficial e robusta do protocolo WebDriver. Assim como no Python, os comandos escritos em scripts Node.js são enviados ao navegador por meio do WebDriver, permitindo a automação completa das ações no navegador.
+
+
+Jmeter Testes:
+
+![Captura de tela 2025-04-18 130819](https://github.com/user-attachments/assets/4e39554b-5277-4783-8d79-cefdb4a9dd2c)
+
+Análise do Resultado do JMeter:
+
+Durante o teste inicial, o servidor respondeu de maneira estável e rápida (aproximadamente 10 segundos por solicitação).
+
+A partir da solicitação número 4942, houve uma mudança significativa no comportamento, com aumento drástico no tempo de resposta (acima de 220 segundos por solicitação) e falhas constantes.
+
+Isso demonstra claramente que o servidor tem uma capacidade limite próxima de 4900 usuários simultâneos. Ao ultrapassar essa carga, o desempenho se deteriora rapidamente, causando falhas nas requisições.
